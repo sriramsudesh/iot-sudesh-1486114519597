@@ -1,0 +1,12 @@
+applications:
+- path: .
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: iot-sudesh
+  host: iot-sudesh
+  disk_quota: 1024M
+  services:
+  - iot-sudesh-cloudantNoSQLDB
+  - iot-sudesh-iotf-service
+  - availability-monitoring-auto
